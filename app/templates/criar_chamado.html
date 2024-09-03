@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Criar Novo Chamado</h2>
+<form action="{{ url_for('criar_chamado') }}" method="post">
+    <label for="titulo">Título:</label>
+    <input type="text" id="titulo" name="titulo" required>
+    <br>
+    <label for="descricao">Descrição:</label>
+    <textarea id="descricao" name="descricao" required></textarea>
+    <br>
+    <button type="submit">Criar Chamado</button>
+</form>
+{% endblock %}

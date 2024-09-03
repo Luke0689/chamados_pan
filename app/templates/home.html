@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="banner">
+    Bem-vindo ao Portal de Chamados de TI!
+</div>
+
+<div class="content">
+    <h2>Acompanhe e crie novos chamados técnicos</h2>
+    <p>Acesse suas solicitações de suporte técnico e veja atualizações em tempo real.</p>
+    <a href="{{ url_for('criar_chamado') }}" class="btn">Criar Chamado</a>
+    <a href="{{ url_for('ver_chamados') }}" class="btn">Ver Chamados</a>
+</div>
+{% endblock %}
